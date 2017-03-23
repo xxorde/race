@@ -1,5 +1,5 @@
 machine:
 dependencies:
-  override:
+  post:
     - go build --race
     - go run --race main.go
