@@ -24,7 +24,7 @@ func main() {
 	scanner := bufio.NewScanner(cmdReader)
 	go func() {
 		for scanner.Scan() {
-			fmt.Printf("docker build out | %s\n", scanner.Text())
+			fmt.Printf("%s\n", scanner.Text())
 		}
 	}()
 
