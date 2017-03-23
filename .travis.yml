@@ -1,0 +1,12 @@
+---
+language: go
+go:
+  - 1.6.x
+  - 1.7.x
+  - 1.8.x
+  - master
+os:
+  - linux
+script:
+  - go build --race
+  - go run --race main.go
